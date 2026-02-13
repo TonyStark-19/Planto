@@ -1,5 +1,22 @@
+// import components
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./section/Home";
+import Trendy from "./section/Trendy";
+import Selling from "./section/Selling";
+import Review from "./section/Review";
+
 export default function App() {
   return (
-    <h1 className="text-amber-300 text-3xl">Hello World</h1>
+    <>
+      <div className="bg-[url('/images/background/bg.jpg')] bg-cover">
+        <Navbar />
+        <Home />
+        <Trendy />
+      </div>
+      <Selling />
+      <Review />
+      <Footer />
+    </>
   )
 }
