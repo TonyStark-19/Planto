@@ -26,14 +26,14 @@ const reviews = [
 // review section
 export default function Review() {
     return (
-        <section className="bg-[#1b2316] text-white pt-28 pb-20 px-6 flex justify-center flex-col items-center font-sans">
+        <section className="bg-[#1b2316] text-white pt-28 pb-20 max-sm:pb-10 px-6 flex justify-center flex-col items-center font-sans">
 
             {/* Header with Styled Brackets */}
             <SectionHeading title="Customer Reviews" />
 
-            <div className="max-w-7xl w-full mt-10">
+            <div className="max-w-7xl w-full mt-10 max-sm:mt-5">
                 {/* Cards */}
-                <div className="flex flex-col md:flex-row gap-10">
+                <div className="flex flex-row max-[1000px]:flex-col gap-10">
                     {reviews.map((review, i) => (
                         <div key={i} className="flex-1">
                             <div className="p-[1.2px] rounded-[3.2rem] bg-linear-to-br from-[#4a5a41] via-[#1f261b] to-[#4a5a41] hover:-translate-y-2

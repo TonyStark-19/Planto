@@ -47,13 +47,13 @@ const products = [
 // selling section
 export default function Selling() {
     return (
-        <div className="bg-[#1b2316] text-white flex flex-col items-center justify-center pt-24 pb-10 px-6 font-sans">
+        <div className="bg-[#1b2316] text-white flex flex-col items-center justify-center pt-24 pb-10 max-sm:pb-5 px-6 font-sans">
 
             {/* Header with Styled Brackets */}
             <SectionHeading title="Best Selling Plants" />
 
             {/* Product Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl w-full mt-5">
+            <div className="grid max-sm:grid-cols-1 lg:grid-cols-3 max-lg:grid-cols-2 gap-10 max-w-7xl w-full mt-5">
                 {products.map((item, index) => (
                     <div key={index} className="relative group">
 

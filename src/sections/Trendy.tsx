@@ -11,16 +11,16 @@ const trendyPlants = [
         price: "599/-",
         image: "/images/plants/plant6.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        class: "flex-row",
-        position: "-translate-x-20"
+        class: "flex-row max-md:flex-col",
+        position: "-translate-x-20 translate-y-2"
     },
     {
         title: "For Small Decs Ai Plat",
         price: "599/-",
         image: "/images/plants/plant7.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        class: "flex-row-reverse",
-        position: "translate-x-20"
+        class: "flex-row-reverse max-md:flex-col justify-center",
+        position: "translate-x-20 translate-y-2"
     }
 ];
 
@@ -39,14 +39,14 @@ export default function Trendy() {
                         className="relative p-[1.5px] rounded-[4rem] bg-linear-to-br from-white/10 via-transparent to-white/10"
                     >
                         <div
-                            className={`bg-[#242c20]/40 backdrop-blur-sm flex flex-col ${plant.class} items-center gap-10 px-20 py-5 rounded-[4rem]`}
+                            className={`bg-[#242c20]/40 backdrop-blur-sm flex md:${plant.class} items-center gap-10 px-20 max-sm:px-10 md:py-5 py-10 rounded-[4rem]`}
                         >
                             {/* Plant Image */}
                             <div className="md:w-1/2 relative">
                                 <img
                                     src={plant.image}
                                     alt={plant.title}
-                                    className={`w-full h-80 object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] scale-150 ${plant.position} -translate-y-10`}
+                                    className={`w-full h-80 object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] scale-150 md:${plant.position} -translate-y-10`}
                                 />
                             </div>
 
