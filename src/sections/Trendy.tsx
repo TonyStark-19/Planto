@@ -12,7 +12,7 @@ const trendyPlants = [
         image: "/images/plants/plant6.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         class: "flex-row max-md:flex-col",
-        position: "-translate-x-20 translate-y-2"
+        position: "-translate-x-20 max-sm:translate-y-2"
     },
     {
         title: "For Small Decs Ai Plat",
@@ -20,7 +20,7 @@ const trendyPlants = [
         image: "/images/plants/plant7.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         class: "flex-row-reverse max-md:flex-col justify-center",
-        position: "translate-x-20 translate-y-2"
+        position: "translate-x-20 max-sm:translate-y-2"
     }
 ];
 
