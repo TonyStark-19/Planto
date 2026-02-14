@@ -2,38 +2,50 @@
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoSearchOutline } from "react-icons/io5";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { IoChevronDown } from "react-icons/io5";
 
-// import components
+// nav icons component
 import NavIcons from "./NavIcons";
 
-// Navbar component
+// navbar component
 export default function Navbar() {
     return (
-        <div className="bg-transparent flex flex-row items-center justify-between py-6 px-10">
-            {/* Navbar head/logo */}
-            <div className="flex flex-row items-center gap-2.5 cursor-pointer">
+        <nav className="bg-transparent flex flex-row items-center justify-between py-8 px-12 w-full z-50">
+            {/* Navbar Logo */}
+            <div className="flex flex-row items-center gap-3 cursor-pointer group">
                 <img
-                    className="w-11 h-11 shadow-2xl"
+                    className="w-10 h-10 object-contain drop-shadow-xl transition-transform group-hover:scale-110"
                     src="/images/navbar/plant.png"
-                    alt="navbar head"
+                    alt="Planto Logo"
                 />
-                <h3 className="text-[28px] font-black text-white/80">Planto.</h3>
+                <h3 className="text-[26px] font-bold text-white tracking-tight">
+                    Planto.
+                </h3>
             </div>
 
-            {/* Nav elements */}
-            <ul className="flex flex-row items-center gap-9 list-none text-white/80 text-xl">
-                <li className="cursor-pointer">Home</li>
-                <li className="cursor-pointer">Plants Type</li>
-                <li className="cursor-pointer">More</li>
-                <li className="cursor-pointer">Contact</li>
+            {/* Navigation Links */}
+            <ul className="hidden md:flex flex-row items-center gap-12 list-none text-white/90 font-medium text-lg">
+                <li className="cursor-pointer hover:text-white transition-all">
+                    Home
+                </li>
+                <li className="flex items-center gap-1 cursor-pointer hover:text-white transition-all">
+                    Plants Type
+                    <IoChevronDown size={16} className="mt-1 opacity-70" />
+                </li>
+                <li className="cursor-pointer hover:text-white transition-all">
+                    More
+                </li>
+                <li className="cursor-pointer hover:text-white transition-all">
+                    Contact
+                </li>
             </ul>
 
-            {/* Nav icons */}
-            <div className="flex flex-row gap-7">
+            {/* Nav Icons */}
+            <div className="flex flex-row items-center gap-8">
                 <NavIcons icon={IoSearchOutline} />
                 <NavIcons icon={HiOutlineShoppingBag} />
                 <NavIcons icon={BiMenuAltRight} />
             </div>
-        </div>
-    )
+        </nav>
+    );
 }
