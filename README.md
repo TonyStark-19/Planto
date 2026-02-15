@@ -7,15 +7,15 @@ It focuses on showcasing trendy plants, O2 plants, customer reviews, and a premi
 
 ## 📸 Screenshots
 
-| 🏠 Home Page |⚙️ Level Category Page |
+| 🏠 Home Section | 🌱 Trendy Plants |
 |------------|------------|
 | ![Screenshot 1](/public/images/previews/home.png) | ![Screenshot 2](/public/images/previews/trendy.png) |
 
-| 🟢 Easy Level Page | 🟡 Medium Level Page |
+| 🔥 Best Sellers | ⭐ Customer Reviews |
 |------------|------------|
 | ![Screenshot 3](/public/images/previews/selling.png) | ![Screenshot 4](/public/images/previews/review.png) |
 
-| 🔴 Hard Level Page | Code Page |
+| 🍃 Best O₂ Plants | 📌 Footer |
 |------------|------------|
 | ![Screenshot 3](/public/images/previews/bestO2.png) | ![Screenshot 4](/public/images/previews/footer.png) |
 
