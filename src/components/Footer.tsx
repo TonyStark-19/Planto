@@ -1,8 +1,24 @@
 // links
-const links = ["Home", "Type's Of plant's", "Contact", "Privacy"];
+const links: string[] = ["Home", "Types Of Plants", "Contact", "Privacy"];
 
-// socials
-const socials = ["FB", "TW", "LI"];
+// import icons
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+
+// type for react icons
+import type { IconType } from "react-icons";
+
+// type definition
+type Social = {
+    label: string;
+    icon: IconType;
+};
+
+// social links
+const socials: Social[] = [
+    { label: "Facebook", icon: FaFacebookF },
+    { label: "Twitter", icon: FaTwitter },
+    { label: "LinkedIn", icon: FaLinkedinIn },
+];
 
 // footer component
 export default function Footer() {
@@ -32,7 +48,7 @@ export default function Footer() {
                 {/* Quick links */}
                 <div className="flex flex-col text-white">
                     <h3 className="text-lg sm:text-xl font-bold mb-5 sm:mb-6">
-                        Quick Link's
+                        Quick Links
                     </h3>
                     <ul className="flex flex-col gap-3 sm:gap-4 text-white/70 text-base sm:text-lg">
                         {links.map((link, idx) => (
@@ -53,18 +69,18 @@ export default function Footer() {
                     </h3>
 
                     <div className="flex flex-col sm:flex-row items-stretch gap-3 sm:gap-0 border border-white/40 rounded-lg p-1
-                     focus-within:border-white transition-all">
+                    focus-within:border-white transition-all">
 
                         <input
                             type="email"
                             placeholder="Enter Email"
                             className="bg-transparent outline-none py-3 px-4 w-full
-                                       text-white placeholder:text-white/40 text-base sm:text-lg"
+                            text-white placeholder:text-white/40 text-base sm:text-lg"
                         />
 
                         <button
                             className="bg-white text-[#1b2316] font-bold uppercase text-sm px-6 py-3 rounded-md hover:bg-[#6fc33e] hover:text-white
-                                    transition-all cursor-pointer"
+                            transition-all cursor-pointer"
                         >
                             SUBSCRIBE
                         </button>
@@ -76,18 +92,19 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mt-14 pt-8 border-t border-white/5">
 
                 <div className="flex gap-6 sm:gap-8 text-base sm:text-lg font-bold tracking-widest text-white/90">
-                    {socials.map((social, idx) => (
+                    {socials.map(({ label, icon: Icon }) => (
                         <span
-                            key={idx}
+                            key={label}
+                            aria-label={label}
                             className="hover:text-[#6fc33e] cursor-pointer transition-colors"
                         >
-                            {social}
+                            <Icon size={20} />
                         </span>
                     ))}
                 </div>
 
                 <p className="text-white/50 text-sm sm:text-base font-medium tracking-wide text-center">
-                    planto © all right reserve
+                    © 2025 Planto. All rights reserved.
                 </p>
             </div>
         </footer>

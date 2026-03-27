@@ -6,6 +6,20 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 // nav icons component
 import NavIcons from "./NavIcons";
 
+// type definition of navlinks
+type NavLink = {
+    label: string;
+    hasDropdown?: boolean;
+};
+
+// navlink
+const navLinks: NavLink[] = [
+    { label: "Home" },
+    { label: "Plants Type", hasDropdown: true },
+    { label: "More" },
+    { label: "Contact" },
+];
+
 // navbar component
 export default function Navbar() {
     return (
@@ -25,26 +39,22 @@ export default function Navbar() {
 
             {/* Navigation Links */}
             <ul className="hidden lg:flex items-center gap-12 list-none text-white/90 font-medium text-lg">
-                <li className="cursor-pointer hover:text-white transition-all">
-                    Home
-                </li>
-                <li className="flex items-center gap-1 cursor-pointer hover:text-white transition-all">
-                    Plants Type
-                    <IoChevronDown size={16} className="mt-1 opacity-70" />
-                </li>
-                <li className="cursor-pointer hover:text-white transition-all">
-                    More
-                </li>
-                <li className="cursor-pointer hover:text-white transition-all">
-                    Contact
-                </li>
+                {navLinks.map(({ label, hasDropdown }) => (
+                    <li
+                        key={label}
+                        className="flex items-center gap-1 cursor-pointer hover:text-white transition-all"
+                    >
+                        <a>{label}</a>
+                        {hasDropdown && <IoChevronDown size={16} className="mt-1 opacity-70" />}
+                    </li>
+                ))}
             </ul>
 
             {/* Nav Icons */}
             <div className="flex items-center gap-5 sm:gap-6 lg:gap-8">
-                <NavIcons icon={IoSearchOutline} />
-                <NavIcons icon={HiOutlineShoppingBag} />
-                <NavIcons icon={BiMenuAltRight} />
+                <NavIcons icon={IoSearchOutline} label="Search" />
+                <NavIcons icon={HiOutlineShoppingBag} label="Cart" />
+                <NavIcons icon={BiMenuAltRight} label="Menu" />
             </div>
         </nav>
     );

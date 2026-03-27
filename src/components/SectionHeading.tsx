@@ -1,5 +1,10 @@
+// section heading props
+interface SectionHeadingProps {
+    title: string;
+}
+
 // section heading component with decorative corners
-export default function SectionHeading({ title }: { title: string }) {
+export default function SectionHeading({ title }: SectionHeadingProps) {
     return (
         <div className="relative mb-20 px-10 py-3 z-10">
             <div className="absolute top-0 left-0 w-8 h-8 border-t-3 border-l-3 border-[#6fc33e] rounded-tl-xl" />
