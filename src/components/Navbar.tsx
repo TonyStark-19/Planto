@@ -32,6 +32,7 @@ export default function Navbar() {
                     src="/images/navbar/plant.png"
                     alt="Planto Logo"
                 />
+
                 <h3 className="text-[22px] sm:text-[26px] font-bold text-white tracking-tight">
                     Planto.
                 </h3>

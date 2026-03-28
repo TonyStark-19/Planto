@@ -2,7 +2,7 @@
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 // import type
-import type { Plant } from "../types";
+import type { Plant } from "../../types";
 
 // Featured Plant Card props
 interface FeaturedPlantCardProps {

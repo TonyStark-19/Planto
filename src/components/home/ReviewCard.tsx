@@ -1,5 +1,5 @@
 // import type
-import type { Review } from "../types";
+import type { Review } from "../../types";
 
 // Review Card props
 interface ReviewCardProps {
@@ -13,10 +13,11 @@ export default function ReviewCard({ review }: ReviewCardProps) {
             <div className="bg-white/5 px-6 py-8 rounded-3xl">
                 <div className="flex items-center gap-3 mb-3">
                     <img
-                        src={review.avatar}
+                        src={review.image}
                         className="w-10 h-10 rounded-full border object-cover border-white/20"
                         alt={review.name}
                     />
+
                     <div>
                         <h4 className="text-sm font-semibold tracking-wide">{review.name}</h4>
                         <div className="flex text-yellow-300 text-[12px] tracking-wider">
@@ -24,7 +25,8 @@ export default function ReviewCard({ review }: ReviewCardProps) {
                         </div>
                     </div>
                 </div>
-                <p className="text-xs text-white/60 leading-relaxed">{review.comment}</p>
+
+                <p className="text-xs text-white/60 leading-relaxed">{review.text}</p>
             </div>
         </div>
     );

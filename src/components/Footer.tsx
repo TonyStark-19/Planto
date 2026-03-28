@@ -36,10 +36,12 @@ export default function Footer() {
                             src="/images/navbar/plant.png"
                             alt="Planto Logo"
                         />
+
                         <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
                             Planto.
                         </h3>
                     </div>
+
                     <p className="text-white/70 leading-relaxed text-base sm:text-lg">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
@@ -50,6 +52,7 @@ export default function Footer() {
                     <h3 className="text-lg sm:text-xl font-bold mb-5 sm:mb-6">
                         Quick Links
                     </h3>
+
                     <ul className="flex flex-col gap-3 sm:gap-4 text-white/70 text-base sm:text-lg">
                         {links.map((link, idx) => (
                             <li
@@ -70,7 +73,6 @@ export default function Footer() {
 
                     <div className="flex flex-col sm:flex-row items-stretch gap-3 sm:gap-0 border border-white/40 rounded-lg p-1
                     focus-within:border-white transition-all">
-
                         <input
                             type="email"
                             placeholder="Enter Email"

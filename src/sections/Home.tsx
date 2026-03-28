@@ -6,15 +6,15 @@ import type { Review } from "../types";
 import type { Plant } from "../types";
 
 // import components
-import ReviewCard from "../components/ReviewCard";
-import FeaturedPlantCard from "../components/FeaturedPlantCard";
+import ReviewCard from "../components/home/ReviewCard";
+import FeaturedPlantCard from "../components/home/FeaturedPlantCard";
 
 // review data
 const review: Review = {
     name: "Alena Patel",
-    avatar: "/images/people/p4.jpg",
+    image: "/images/people/p4.jpg",
     rating: 5,
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
 };
 
 // plant data
@@ -53,6 +53,7 @@ export default function Home() {
                             group-hover:border-[#6fc33e] transition-all cursor-pointer">
                                 <FaPlay className="text-[16px] text-white" />
                             </button>
+
                             <p className="text-base sm:text-lg font-medium">
                                 Live Demo...
                             </p>
