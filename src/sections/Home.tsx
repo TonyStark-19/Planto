@@ -14,15 +14,15 @@ const review: Review = {
     name: "Alena Patel",
     image: "/images/people/p4.jpg",
     rating: 5,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+    text: "Absolutely love the quality of plants! My Calathea arrived fresh, healthy, and beautifully packaged. Highly recommended!",
 };
 
 // plant data
 const featuredPlant: Plant = {
-    name: "Calathea Plant",
+    name: "Dieffenbachia Plant",
     tag: "Trendy House Plant",
     image: "/images/plants/plant5.png",
-    alt: "Calathea",
+    alt: "Dieffenbachia indoor plant with variegated green and yellow leaves",
 };
 
 // home section
@@ -31,15 +31,19 @@ export default function Home() {
         <section className="relative overflow-hidden font-sans px-6 pt-24 md:px-12 lg:px-20 lg:pt-28">
 
             <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between gap-20 -mt-10">
-
                 {/* Left main content */}
-                <div className="text-white/80 max-w-xl lg:max-w-2xl">
+                <div
+                    className="text-white/80 max-w-xl lg:max-w-2xl"
+                    data-aos="fade-down"
+                    data-aos-duration="900"
+                >
                     <h1 className="text-[52px] sm:text-[70px] lg:text-[90px] font-semibold leading-[0.95] -ml-1">
                         Breath Natural
                     </h1>
 
                     <p className="text-base sm:text-lg mt-4 ml-1 max-w-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Transform your space with handpicked indoor plants that purify the air, reduce stress, and bring life to your home. Nature,
+                        delivered to your doorstep.
                     </p>
 
                     <div className="flex flex-wrap gap-6 mt-6 items-center">
@@ -61,11 +65,22 @@ export default function Home() {
                     </div>
 
                     {/* Floating Review Card */}
-                    <ReviewCard review={review} />
+                    <div
+                        data-aos="fade-right"
+                        data-aos-delay="300"
+                    >
+                        <ReviewCard review={review} />
+                    </div>
                 </div>
 
                 {/* Featured Plant Card */}
-                <FeaturedPlantCard plant={featuredPlant} />
+                <div
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                >
+                    <FeaturedPlantCard plant={featuredPlant} />
+                </div>
             </div>
         </section>
     );

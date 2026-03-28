@@ -27,7 +27,6 @@ export default function Footer() {
 
             {/* Upper Footer */}
             <div className="flex flex-col xl:flex-row justify-between gap-12">
-
                 {/* Brand info column */}
                 <div className="flex flex-col gap-6 max-w-sm">
                     <div className="flex items-center gap-3 cursor-pointer">
@@ -43,7 +42,7 @@ export default function Footer() {
                     </div>
 
                     <p className="text-white/70 leading-relaxed text-base sm:text-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Bringing nature closer to you with handpicked indoor plants that purify your space and elevate your everyday living.
                     </p>
                 </div>
 
@@ -68,16 +67,15 @@ export default function Footer() {
                 {/* Subscription Section */}
                 <div className="flex flex-col text-white max-w-md w-full">
                     <h3 className="text-lg sm:text-xl font-bold mb-6 sm:mb-8">
-                        For Every Update.
+                        Stay Updated with Green Living 🌿
                     </h3>
 
                     <div className="flex flex-col sm:flex-row items-stretch gap-3 sm:gap-0 border border-white/40 rounded-lg p-1
                     focus-within:border-white transition-all">
                         <input
                             type="email"
-                            placeholder="Enter Email"
-                            className="bg-transparent outline-none py-3 px-4 w-full
-                            text-white placeholder:text-white/40 text-base sm:text-lg"
+                            placeholder="Enter your email address"
+                            className="bg-transparent outline-none py-3 px-4 w-full text-white placeholder:text-white/40 text-base sm:text-lg"
                         />
 
                         <button

@@ -22,7 +22,6 @@ export default function FeaturedPlantCard({ plant }: FeaturedPlantCardProps) {
         <div className="relative group w-full max-w-sm mx-auto max-lg:max-w-lg lg:mx-0">
             <div className="p-[1.5px] rounded-[4rem] bg-linear-to-br from-white/20 via-transparent to-white/20">
                 <div className="bg-[#242c20]/60 backdrop-blur-sm py-8 px-8 sm:px-10 rounded-[4rem] text-left">
-
                     {/* Plant Image */}
                     <div className="relative -mt-24 sm:-mt-30 mb-6">
                         <img

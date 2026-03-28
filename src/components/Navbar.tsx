@@ -24,7 +24,6 @@ const navLinks: NavLink[] = [
 export default function Navbar() {
     return (
         <nav className="bg-transparent flex items-center justify-between w-full z-50 px-6 py-6 sm:px-8 lg:px-12 lg:py-8">
-
             {/* Navbar Logo */}
             <div className="flex items-center gap-3 cursor-pointer group">
                 <img

@@ -11,11 +11,11 @@ import type { O2Plant } from "../types";
 const plants: O2Plant[] = [
     {
         image: "/images/plants/plant5.png",
-        alt: "O2 Plant 1",
-        title: "We Have Small And Best O2 Plants Collection",
+        alt: "Dieffenbachia indoor plant",
+        title: "Fresh & Air-Purifying Indoor Plants",
         description: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "Bring home the beauty of Dieffenbachia, known for its lush variegated leaves and air-refreshing qualities.",
+            "Easy to care for and perfect for indoor spaces, it adds a vibrant and calming touch to your home or workspace.",
         ],
     },
 ];
@@ -31,9 +31,14 @@ const dots = [
 export default function BestO2() {
     return (
         <div className="bg-[#1b2316] text-white flex flex-col items-center justify-center py-20 px-6 font-sans">
+            {/* Header with Styled Brackets */}
             <SectionHeading title="Our Best O2" />
 
-            <div className="relative max-w-6xl w-full group mt-10 max-sm:mt-5">
+            <div
+                className="relative max-w-6xl w-full group mt-10 max-sm:mt-5"
+                data-aos="fade-up"
+                data-aos-duration="800"
+            >
                 <div className="p-[1.5px] rounded-[4rem] bg-linear-to-br from-white/20 via-transparent to-white/20">
                     {plants.map((item, idx) => (
                         <div
@@ -48,11 +53,19 @@ export default function BestO2() {
                                     alt={item.alt}
                                     className="w-full max-w-sm md:max-w-none h-auto object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.6)] scale-100
                                     md:scale-110 -translate-y-6 md:-translate-y-12 md:-translate-x-15"
+                                    data-aos="fade-right"
+                                    data-aos-duration="900"
+                                    data-aos-delay="200"
                                 />
                             </div>
 
                             {/* Content — driven by activeIndex */}
-                            <div className="md:w-1/2 space-y-6 text-white/70 max-lg:pb-10">
+                            <div
+                                className="md:w-1/2 space-y-6 text-white/70 max-lg:pb-10"
+                                data-aos="fade-left"
+                                data-aos-duration="900"
+                                data-aos-delay="300"
+                            >
                                 <h3 className="text-3xl max-sm:text-2xl font-semibold leading-tight max-w-md">
                                     {item.title}
                                 </h3>

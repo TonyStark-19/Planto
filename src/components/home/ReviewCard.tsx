@@ -9,7 +9,7 @@ interface ReviewCardProps {
 // review card component
 export default function ReviewCard({ review }: ReviewCardProps) {
     return (
-        <div className="mt-20 sm:mt-24 w-80 max-lg:w-full max-w-full p-px rounded-3xl backdrop-blur-sm">
+        <div className="mt-20 w-80 max-lg:w-full max-w-full p-px rounded-3xl backdrop-blur-sm">
             <div className="bg-white/5 px-6 py-8 rounded-3xl">
                 <div className="flex items-center gap-3 mb-3">
                     <img
