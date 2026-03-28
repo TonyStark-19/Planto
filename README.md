@@ -1,7 +1,7 @@
 # 🌿 Planto — Plant Selling Website
 
-Planto is a modern, responsive plant-selling website built with a clean UI and smooth user experience.  
-It focuses on showcasing trendy plants, O2 plants, customer reviews, and a premium glassmorphism-inspired design.
+Planto is a sleek, modern plant-selling website designed with a premium UI and smooth user experience.
+It showcases trendy indoor plants, air-purifying (O₂) plants, and customer reviews with elegant animations and a glassmorphism-inspired design.
 
 ---
 
@@ -29,25 +29,28 @@ The project is live and can be viewed here: [Planto](https://planto-snowy.vercel
 
 ## ✨ Features
 
-- 🌿 Modern plant-selling UI
+- 🌿 Clean & modern plant e-commerce UI
 - 📱 Fully responsive (mobile, tablet, desktop)
-- 🎨 Glassmorphism & soft gradient borders
-- 🪴 Trendy Plants & Best O2 Plants sections
-- 💬 Customer review cards
-- 🧭 Clean navigation bar & footer
-- ⚡ Fast performance with Vite
-- 🎯 Reusable React components
+- 🎨 Glassmorphism + soft gradient aesthetics
+- 🌱 Trendy Plants & O₂ Plants sections
+- 💬 Realistic customer reviews
+- 🧭 Smooth navigation & structured layout
+- 🎞 Scroll-based animations using AOS
+- ⚡ Fast performance powered by Vite
+- ♻️ Reusable and scalable React components
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Framework:** React (with TypeScript)
-- **Build Tool:** Vite
-- **Styling:** Tailwind CSS
-- **Icons:** React Icons
-- **Language:** TypeScript
-- **Deployment:** Vercel
+| Category       | Technology                     |
+|----------------|--------------------------------|
+| Framework      | React (with TypeScript)        |
+| Build Tool     | Vite                           |
+| Styling        | Tailwind CSS                   |
+| Icons          | React Icons                    |
+| Animations     | AOS (Animate On Scroll)        |
+| Deployment     | Vercel                         |
 
 ---
 
