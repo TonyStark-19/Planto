@@ -1,5 +1,5 @@
 // import components
-import SectionHeading from "../components/SectionHeading";
+import SectionHeading from "../components/utils/SectionHeading";
 import ReviewCard from "../components/review/Review";
 
 // import type

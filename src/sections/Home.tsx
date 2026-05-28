@@ -29,7 +29,6 @@ const featuredPlant: Plant = {
 export default function Home() {
     return (
         <section className="relative overflow-hidden font-sans px-6 pt-24 md:px-12 lg:px-20 lg:pt-28">
-
             <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between gap-20 -mt-10">
                 {/* Left main content */}
                 <div
@@ -47,14 +46,18 @@ export default function Home() {
                     </p>
 
                     <div className="flex flex-wrap gap-6 mt-6 items-center">
-                        <button className="border-2 border-white/60 rounded-xl px-10 sm:px-12 py-2.5 text-lg sm:text-xl hover:bg-white hover:text-[#1b2316]
-                            transition-all cursor-pointer">
+                        <button
+                            className="border-2 border-white/60 rounded-xl px-10 sm:px-12 py-2.5 text-lg sm:text-xl hover:bg-white hover:text-[#1b2316]
+                            transition-all cursor-pointer"
+                        >
                             Explore
                         </button>
 
                         <div className="flex items-center gap-4 group cursor-pointer">
-                            <button className="border-2 border-white/60 rounded-full p-4 flex items-center justify-center group-hover:bg-[#6fc33e]
-                            group-hover:border-[#6fc33e] transition-all cursor-pointer">
+                            <button
+                                className="border-2 border-white/60 rounded-full p-4 flex items-center justify-center group-hover:bg-[#6fc33e]
+                                group-hover:border-[#6fc33e] transition-all cursor-pointer"
+                            >
                                 <FaPlay className="text-[16px] text-white" />
                             </button>
 

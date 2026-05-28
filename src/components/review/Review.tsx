@@ -23,8 +23,10 @@ export default function ReviewCard({ review }: ReviewCardProps) {
 
     return (
         <div className="flex-1">
-            <div className="p-[1.2px] rounded-[3.2rem] bg-linear-to-br from-[#4a5a41] via-[#1f261b] to-[#4a5a41] hover:-translate-y-2
-            transition-transform duration-500">
+            <div
+                className="p-[1.2px] rounded-[3.2rem] bg-linear-to-br from-[#4a5a41] via-[#1f261b] to-[#4a5a41] hover:-translate-y-2
+                transition-transform duration-500"
+            >
                 <div className="relative bg-[#242c20]/90 rounded-[3.2rem] px-10 py-12 shadow-2xl overflow-hidden">
                     <div className="relative z-10">
                         <div className="flex items-center gap-4 mb-6">

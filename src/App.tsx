@@ -1,6 +1,6 @@
 // import components
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 import Home from "./sections/Home";
 import Trendy from "./sections/Trendy";
 import Selling from "./sections/Selling";

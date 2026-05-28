@@ -9,6 +9,7 @@ interface TrendyPlantCardProps {
     plant: TrendyPlant;
 }
 
+// trendy plant card component
 export default function TrendyPlantCard({ plant }: TrendyPlantCardProps) {
     return (
         <div className="relative p-[1.5px] rounded-[4rem] bg-linear-to-br from-white/10 via-transparent to-white/10">

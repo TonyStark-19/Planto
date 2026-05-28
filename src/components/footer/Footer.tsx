@@ -24,7 +24,6 @@ const socials: Social[] = [
 export default function Footer() {
     return (
         <footer className="bg-[#222c1d] border-t border-white/5 font-sans px-6 py-16 sm:px-10 md:px-24 md:py-20">
-
             {/* Upper Footer */}
             <div className="flex flex-col xl:flex-row justify-between gap-12">
                 {/* Brand info column */}
@@ -70,8 +69,10 @@ export default function Footer() {
                         Stay Updated with Green Living 🌿
                     </h3>
 
-                    <div className="flex flex-col sm:flex-row items-stretch gap-3 sm:gap-0 border border-white/40 rounded-lg p-1
-                    focus-within:border-white transition-all">
+                    <div
+                        className="flex flex-col sm:flex-row items-stretch gap-3 sm:gap-0 border border-white/40 rounded-lg p-1
+                        focus-within:border-white transition-all"
+                    >
                         <input
                             type="email"
                             placeholder="Enter your email address"
@@ -90,7 +91,6 @@ export default function Footer() {
 
             {/* Bottom Footer */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mt-14 pt-8 border-t border-white/5">
-
                 <div className="flex gap-6 sm:gap-8 text-base sm:text-lg font-bold tracking-widest text-white/90">
                     {socials.map(({ label, icon: Icon }) => (
                         <span
